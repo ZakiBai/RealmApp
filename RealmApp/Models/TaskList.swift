@@ -18,5 +18,5 @@ final class Task: Object {
     @Persisted var title = ""
     @Persisted var note = ""
     @Persisted var date = Date()
-    @Persisted var isCompleter = false
+    @Persisted var isComplete = false
 }
