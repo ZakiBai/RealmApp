@@ -10,7 +10,7 @@
         <!--Task Lists-->
         <scene sceneID="Zgv-U6-EWH">
             <objects>
-                <tableViewController id="xC5-sl-rWU" sceneMemberID="viewController">
+                <tableViewController id="xC5-sl-rWU" customClass="TaskListViewController" customModule="RealmApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="0BU-I9-xm3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,6 +22,9 @@
                                 <segment title="Date"/>
                                 <segment title="A-Z"/>
                             </segments>
+                            <connections>
+                                <action selector="sortingList:" destination="xC5-sl-rWU" eventType="valueChanged" id="ea2-eX-3KW"/>
+                            </connections>
                         </segmentedControl>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="taskListCell" textLabel="a3k-av-Lvk" detailTextLabel="qRS-su-F3R" style="IBUITableViewCellStyleValue1" id="UXB-Wa-y6P">
@@ -63,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="1116" y="60"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Tasks View Controller-->
         <scene sceneID="xnh-ag-JCq">
             <objects>
-                <tableViewController id="fMz-73-Ban" sceneMemberID="viewController">
+                <tableViewController id="fMz-73-Ban" customClass="TasksViewController" customModule="RealmApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hII-KL-l5W">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
